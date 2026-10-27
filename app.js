@@ -6,8 +6,18 @@
   const menuButton = document.querySelector('[data-menu-toggle]');
   const toast = document.querySelector('[data-toast]');
   const filterForm = document.querySelector('[data-filter-form]');
+  const themeToggle = document.querySelector('[data-theme-toggle]');
   let selectedCategory = '';
   let notificationTimer;
+
+  const savedTheme = localStorage.getItem('suara-siswa-theme');
+  if (savedTheme === 'dark') document.documentElement.dataset.theme = 'dark';
+  themeToggle.addEventListener('click', () => {
+    const darkMode = document.documentElement.dataset.theme !== 'dark';
+    document.documentElement.dataset.theme = darkMode ? 'dark' : 'light';
+    localStorage.setItem('suara-siswa-theme', darkMode ? 'dark' : 'light');
+    themeToggle.setAttribute('aria-label', darkMode ? 'Aktifkan mode terang' : 'Aktifkan mode gelap');
+  });
 
   const readStore = () => {
     try {

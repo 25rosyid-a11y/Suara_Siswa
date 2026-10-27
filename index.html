@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f6f7f2">
+  <meta name="theme-color" content="#f7f9fc">
   <meta name="description" content="Ruang aspirasi sekolah untuk menyampaikan ide, masukan, dan solusi bersama.">
   <title>Suara Siswa | Ruang Aspirasi Sekolah</title>
   <link rel="stylesheet" href="style.css">
@@ -20,6 +20,7 @@
       <button class="nav-link active" type="button" data-navigate="home">Beranda</button>
       <button class="nav-link" type="button" data-navigate="aspirations">Jelajahi</button>
       <button class="nav-link nav-cta" type="button" data-navigate="submit">+ Sampaikan aspirasi</button>
+      <button class="theme-toggle" type="button" aria-label="Aktifkan mode gelap" data-theme-toggle>◐</button>
     </nav>
   </header>
 
@@ -28,8 +29,8 @@
       <div class="hero shell">
         <div class="hero-copy">
           <div class="eyebrow"><span class="live-dot"></span> SUARA SISWA, PERUBAHAN BERSAMA</div>
-          <h1>Sekolah yang lebih baik<br>dimulai dari <em>satu suara.</em></h1>
-          <p>Ruang untuk berbagi ide, menyampaikan masukan, dan ikut membangun lingkungan sekolah yang lebih nyaman.</p>
+          <h1>Suaramu berarti.<br><em>Perubahan dimulai di sini.</em></h1>
+          <p>Sampaikan ide, masukan, atau masalah di sekolah dengan mudah. Kami bantu aspirasi sampai ke pihak yang tepat.</p>
           <div class="hero-actions">
             <button class="button button-dark" type="button" data-navigate="submit">Sampaikan aspirasi <span aria-hidden="true">↗</span></button>
             <button class="button button-quiet" type="button" data-navigate="track">Lacak aspirasi <span aria-hidden="true">→</span></button>
@@ -44,27 +45,26 @@
             <p>“Akan lebih nyaman kalau ada tempat teduh untuk menunggu jemputan.”</p>
             <div class="message-bottom"><span>FASILITAS SEKOLAH</span><span>♡ 12</span></div>
           </div>
+          <div class="float-stat float-stat-top"><span class="float-stat-icon mint-icon">↗</span><span><b data-stat="total">0</b><small>Aspirasi masuk</small></span></div>
+          <div class="float-stat float-stat-bottom"><span class="float-stat-icon orange-icon">✓</span><span><b data-stat="done">0</b><small>Sudah diselesaikan</small></span></div>
           <div class="visual-stamp">DIDENGAR<br><b>BERSAMA</b></div>
           <div class="visual-index">01 <span>—</span> 04</div>
         </div>
       </div>
 
-      <section class="metrics-band" aria-label="Ringkasan aspirasi">
-        <div class="shell metrics-inner">
-          <div class="metric-intro"><span class="eyebrow">RUANG KITA</span><p>Setiap masukan adalah awal percakapan yang baik.</p></div>
-          <div class="metric"><strong data-stat="total">0</strong><span>aspirasi tersimpan<br>di perangkat ini</span></div>
-          <div class="metric"><strong data-stat="done">0</strong><span>aspirasi ditandai<br>selesai</span></div>
-          <button class="metric-link" type="button" data-navigate="aspirations">Jelajahi aspirasi <span>↗</span></button>
-        </div>
+      <section class="trust-strip shell" aria-label="Prinsip ruang aspirasi">
+        <div class="trust-item"><span class="trust-icon blue-icon">◉</span><span><b>Bisa anonim</b><small>Identitas tidak ditampilkan</small></span></div>
+        <div class="trust-item"><span class="trust-icon blue-icon">↻</span><span><b>Status transparan</b><small>Pantau progres aspirasi di perangkat ini</small></span></div>
+        <div class="trust-item"><span class="trust-icon blue-icon">♧</span><span><b>Ruang yang santun</b><small>Fokus pada solusi</small></span></div>
       </section>
 
       <section class="section shell category-section">
-        <div class="section-heading"><div><span class="eyebrow">PILIH TOPIK</span><h2>Apa yang ingin kamu suarakan?</h2></div><p>Mulai dari hal kecil. Ide baik tumbuh saat dibagikan.</p></div>
+        <div class="section-heading"><div><span class="eyebrow">MULAI DARI SINI</span><h2>Suarakan yang perlu diperbaiki</h2></div><p>Hanya perlu beberapa langkah untuk menyampaikan aspirasi.</p></div>
         <div class="category-list">
-          <button type="button" class="category-item" data-category="Fasilitas Sekolah"><span class="category-number">01</span><span class="category-icon blue-icon">⌂</span><span class="category-title">Fasilitas sekolah</span><span class="category-description">Ruang kelas, kebersihan, akses, dan lainnya</span><span class="category-arrow">↗</span></button>
-          <button type="button" class="category-item" data-category="Kegiatan Ekstrakurikuler"><span class="category-number">02</span><span class="category-icon green-icon">✳</span><span class="category-title">Kegiatan & ekskul</span><span class="category-description">Acara, klub, minat, dan pengembangan bakat</span><span class="category-arrow">↗</span></button>
+          <button type="button" class="category-item" data-category="Fasilitas Sekolah"><span class="category-number">01</span><span class="category-icon blue-icon">⌂</span><span class="category-title">Fasilitas Sekolah</span><span class="category-description">Ruang kelas, toilet, internet, dan lainnya</span><span class="category-arrow">↗</span></button>
+          <button type="button" class="category-item" data-category="Kegiatan Ekstrakurikuler"><span class="category-number">02</span><span class="category-icon green-icon">✦</span><span class="category-title">Kegiatan & Ekskul</span><span class="category-description">Ide acara, klub, dan pengembangan bakat</span><span class="category-arrow">↗</span></button>
           <button type="button" class="category-item" data-category="Akademik"><span class="category-number">03</span><span class="category-icon coral-icon">▤</span><span class="category-title">Akademik</span><span class="category-description">Belajar, jadwal, dan dukungan pembelajaran</span><span class="category-arrow">↗</span></button>
-          <button type="button" class="category-item" data-category="Masukan Umum"><span class="category-number">04</span><span class="category-icon yellow-icon">♡</span><span class="category-title">Masukan umum</span><span class="category-description">Gagasan lain untuk sekolah yang lebih baik</span><span class="category-arrow">↗</span></button>
+          <button type="button" class="category-item" data-category="Masukan Umum"><span class="category-number">04</span><span class="category-icon purple-icon">♡</span><span class="category-title">Masukan Umum</span><span class="category-description">Ide untuk sekolah yang lebih baik</span><span class="category-arrow">↗</span></button>
         </div>
       </section>
 
