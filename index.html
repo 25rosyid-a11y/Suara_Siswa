@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f7f2">
+  <meta name="description" content="Ruang aspirasi sekolah untuk menyampaikan ide, masukan, dan solusi bersama.">
+  <title>Suara Siswa | Ruang Aspirasi Sekolah</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#beranda" data-navigate="home" aria-label="Suara Siswa, beranda">
+      <span class="brand-mark">S.</span>
+      <span class="brand-name">suara<span>siswa</span><small>RUANG ASPIRASI SEKOLAH</small></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Buka navigasi" aria-expanded="false" aria-controls="main-nav" data-menu-toggle>☰</button>
+    <nav id="main-nav" class="nav" data-nav aria-label="Navigasi utama">
+      <button class="nav-link active" type="button" data-navigate="home">Beranda</button>
+      <button class="nav-link" type="button" data-navigate="aspirations">Jelajahi</button>
+      <button class="nav-link nav-cta" type="button" data-navigate="submit">+ Sampaikan aspirasi</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="view home-view" data-page="home">
+      <div class="hero shell">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="live-dot"></span> SUARA SISWA, PERUBAHAN BERSAMA</div>
+          <h1>Sekolah yang lebih baik<br>dimulai dari <em>satu suara.</em></h1>
+          <p>Ruang untuk berbagi ide, menyampaikan masukan, dan ikut membangun lingkungan sekolah yang lebih nyaman.</p>
+          <div class="hero-actions">
+            <button class="button button-dark" type="button" data-navigate="submit">Sampaikan aspirasi <span aria-hidden="true">↗</span></button>
+            <button class="button button-quiet" type="button" data-navigate="track">Lacak aspirasi <span aria-hidden="true">→</span></button>
+          </div>
+          <div class="hero-footnote"><span class="footnote-icon">◎</span> Bisa anonim <i></i> Santun dan berorientasi solusi</div>
+        </div>
+        <div class="hero-visual" aria-label="Ilustrasi pesan aspirasi yang mendapat tanggapan">
+          <div class="visual-grid"></div>
+          <div class="visual-label">RUANG DENGAR<br><b>2026 / 2027</b></div>
+          <div class="message-card">
+            <div class="message-top"><span class="message-symbol">✳</span><span class="message-status"><i></i> SUARA BARU</span></div>
+            <p>“Akan lebih nyaman kalau ada tempat teduh untuk menunggu jemputan.”</p>
+            <div class="message-bottom"><span>FASILITAS SEKOLAH</span><span>♡ 12</span></div>
+          </div>
+          <div class="visual-stamp">DIDENGAR<br><b>BERSAMA</b></div>
+          <div class="visual-index">01 <span>—</span> 04</div>
+        </div>
+      </div>
+
+      <section class="metrics-band" aria-label="Ringkasan aspirasi">
+        <div class="shell metrics-inner">
+          <div class="metric-intro"><span class="eyebrow">RUANG KITA</span><p>Setiap masukan adalah awal percakapan yang baik.</p></div>
+          <div class="metric"><strong data-stat="total">0</strong><span>aspirasi tersimpan<br>di perangkat ini</span></div>
+          <div class="metric"><strong data-stat="done">0</strong><span>aspirasi ditandai<br>selesai</span></div>
+          <button class="metric-link" type="button" data-navigate="aspirations">Jelajahi aspirasi <span>↗</span></button>
+        </div>
+      </section>
+
+      <section class="section shell category-section">
+        <div class="section-heading"><div><span class="eyebrow">PILIH TOPIK</span><h2>Apa yang ingin kamu suarakan?</h2></div><p>Mulai dari hal kecil. Ide baik tumbuh saat dibagikan.</p></div>
+        <div class="category-list">
+          <button type="button" class="category-item" data-category="Fasilitas Sekolah"><span class="category-number">01</span><span class="category-icon blue-icon">⌂</span><span class="category-title">Fasilitas sekolah</span><span class="category-description">Ruang kelas, kebersihan, akses, dan lainnya</span><span class="category-arrow">↗</span></button>
+          <button type="button" class="category-item" data-category="Kegiatan Ekstrakurikuler"><span class="category-number">02</span><span class="category-icon green-icon">✳</span><span class="category-title">Kegiatan & ekskul</span><span class="category-description">Acara, klub, minat, dan pengembangan bakat</span><span class="category-arrow">↗</span></button>
+          <button type="button" class="category-item" data-category="Akademik"><span class="category-number">03</span><span class="category-icon coral-icon">▤</span><span class="category-title">Akademik</span><span class="category-description">Belajar, jadwal, dan dukungan pembelajaran</span><span class="category-arrow">↗</span></button>
+          <button type="button" class="category-item" data-category="Masukan Umum"><span class="category-number">04</span><span class="category-icon yellow-icon">♡</span><span class="category-title">Masukan umum</span><span class="category-description">Gagasan lain untuk sekolah yang lebih baik</span><span class="category-arrow">↗</span></button>
+        </div>
+      </section>
+
+      <section class="closing-band"><div class="shell closing-inner"><div><span class="eyebrow">PUNYA GAGASAN?</span><h2>Suarakan dengan santun.<br>Mulai perubahan hari ini.</h2></div><button class="button button-light" type="button" data-navigate="submit">Tulis aspirasi <span>↗</span></button></div></section>
+    </section>
+
+    <section class="view shell interior-view" data-page="aspirations" hidden>
+      <div class="page-heading"><div><span class="eyebrow">RUANG PUBLIK</span><h1>Suara yang dibagikan.</h1><p>Jelajahi aspirasi dan dukung gagasan yang menurutmu penting.</p></div><button class="button button-dark" type="button" data-navigate="submit">+ Tulis aspirasi</button></div>
+      <form class="filter-bar" data-filter-form>
+        <label class="search-box"><span aria-hidden="true">⌕</span><span class="sr-only">Cari aspirasi</span><input type="search" name="q" placeholder="Cari judul atau isi..." maxlength="100"></label>
+        <label><span class="sr-only">Kategori</span><select name="category"><option value="">Semua kategori</option><option>Fasilitas Sekolah</option><option>Kegiatan Ekstrakurikuler</option><option>Akademik</option><option>Kedisiplinan</option><option>Masukan Umum</option></select></label>
+        <label><span class="sr-only">Urutkan</span><select name="sort"><option value="newest">Terbaru</option><option value="votes">Dukungan terbanyak</option></select></label>
+        <button class="button button-dark" type="submit">Cari</button>
+      </form>
+      <div class="results-line"><span data-results-count>0 aspirasi</span><button type="button" class="text-button" data-clear-filters>Hapus filter</button></div>
+      <div class="aspiration-list" data-aspiration-list></div>
+    </section>
+
+    <section class="view shell interior-view form-view" data-page="submit" hidden>
+      <div class="page-heading"><div><span class="eyebrow">FORMULIR ASPIRASI</span><h1>Ceritakan yang penting.</h1><p>Jelaskan situasi dan solusi yang kamu harapkan. Identitasmu tidak wajib dicantumkan.</p></div><div class="form-aside-mark">SUARA<br><b>BERSAMA</b></div></div>
+      <form class="submission-form" data-submission-form>
+        <div class="form-column">
+          <label>Kategori <span>*</span><select name="category" required><option value="">Pilih kategori</option><option>Fasilitas Sekolah</option><option>Kegiatan Ekstrakurikuler</option><option>Akademik</option><option>Kedisiplinan</option><option>Masukan Umum</option></select></label>
+          <label>Judul aspirasi <span>*</span><input name="title" minlength="5" maxlength="140" required placeholder="Contoh: Tambahan tempat duduk di taman sekolah"><small class="count" data-count="title">0 / 140</small></label>
+          <label>Detail aspirasi <span>*</span><textarea name="body" minlength="15" maxlength="3000" rows="7" required placeholder="Ceritakan situasi, dampaknya, dan perubahan yang kamu harapkan..."></textarea><small class="count" data-count="body">0 / 3000</small></label>
+        </div>
+        <aside class="form-side">
+          <div class="privacy-panel"><span class="privacy-mark">◎</span><h2>Privasi tetap pilihanmu.</h2><p>Kamu dapat mengirim tanpa nama. Hindari mencantumkan kata sandi, nomor telepon, atau informasi pribadi orang lain.</p><label class="switch-row"><input type="checkbox" name="anonymous" checked><span class="switch-ui"></span><span>Kirim secara anonim</span></label><div class="name-field" data-name-field hidden><label>Nama kamu<input name="name" maxlength="100" placeholder="Nama lengkap"></label></div></div>
+          <label class="consent-row"><input type="checkbox" required><span>Saya menyampaikan aspirasi dengan sopan dan tidak mencantumkan data pribadi orang lain.</span></label>
+          <button class="button button-dark full-button" type="submit">Kirim aspirasi <span>↗</span></button>
+          <p class="local-note">Catatan: versi GitHub Pages menyimpan aspirasi hanya di browser ini.</p>
+        </aside>
+      </form>
+      <div class="confirmation-panel" data-confirmation hidden aria-live="polite"></div>
+    </section>
+
+    <section class="view shell interior-view track-view" data-page="track" hidden>
+      <div class="track-intro"><span class="eyebrow">PELACAKAN ASPIRASI</span><h1>Satu kode.<br><em>Satu kabar terbaru.</em></h1><p>Masukkan kode yang muncul setelah aspirasi dikirim dari browser ini.</p></div>
+      <form class="track-form" data-track-form><label class="sr-only" for="tracking-code">Kode pelacakan</label><input id="tracking-code" name="code" required placeholder="Contoh: SS-A1B2C3D4"><button class="button button-dark" type="submit">Lacak aspirasi <span>→</span></button></form>
+      <div class="track-result" data-track-result aria-live="polite"></div>
+      <div class="local-note track-note">Kode dan laporan hanya tersedia pada browser/perangkat tempat aspirasi dikirim.</div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="shell footer-inner"><a class="brand footer-brand" href="#beranda" data-navigate="home"><span class="brand-mark">S.</span><span class="brand-name">suara<span>siswa</span><small>OSIS · 2026 / 2027</small></span></a><p>Ruang aspirasi yang santun, terbuka, dan membangun.</p><span class="footer-note">Versi statis · data tersimpan di browser</span></div></footer>
+  <div class="toast" data-toast role="status" aria-live="polite"></div>
+</body>
+</html>
